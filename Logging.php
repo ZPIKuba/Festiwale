@@ -47,7 +47,7 @@ session_start();
     {
         echo "<br> you are logged in as ".$_SESSION["login"]." <br>";
         echo "<a href=\"logout.php\">Logout</a><br>";
-        die("<a href='form2.php'>back</a></head></html>");
+        die("<a href='form2.php'>b</a></head></html>");
 
     }
     ?>
