@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Wrocławski festiwal chórów osiedlowych" />
+    <meta name="author" content="Jakub Granieczny, Piotr Kościuszko, Krzysztof Kozicki, Ewa Skórska" />
+    <meta name="keywords" content="festiwal, chór, choir, Wrocław, singing" />
+    <title>Festiwale</title>
+</head>
+<body>
+    <h2>Edytowanie festiwalu</h2>
+
+    <?php
+        $servername = "localhost";
+        $username = "username";
+        $password = "password";
+        $dbname = "baza";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+            }
+
+        $sql = "SELECT * FROM Festiwale WHERE Nazwa = ''";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        // output data of each row
+        while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+        }
+        } else {
+        echo "0 results";
+        }
+        $conn->close();
+    ?>
+
+    <form method="post" action="edit_festiwal.php">
+        <h4>Dane szczegółowe:</h4>
+        <p><label>Nazwa: <font color ="red">*</font> <input id = "nazwa" name = "nazwa" type = "text" size = "50" value= "<?php echo $row ['Nazwa']; ?> " required autofocus></label></p>
+        <p><label>Utwór wspólny: <font color ="red">*</font> <input id = "utwor" name = "utwor" type = "text" size = "40" value= "<?php echo $row ['UtworWspolny']; ?> " required></label></p>
+        <p>
+            <label>
+                Organizator: <font color ="red">*</font>
+                <select name = "organizator">
+                    <option selected>Urwinoga, Zenon</option>
+                    <option>Kościuszko, Piotr</option>
+                    <option>Stuligrosz, Stefan</option>
+                </select>
+            </label>
+        </p>
+        <p><label>Początek: <font color ="red">*</font> <input id = "poczatek" name = "start" type = "date" required min="2017-03-27"></label></p>
+        <p><label>Koniec: <font color ="red">*</font> <input id = "koniec" name = "koniec" type = "date" required min="2017-03-28"></label></p>
+        <p class="wyjasnienie"><font color ="red">*</font> - pola wymagane</p>
+        <p>
+            <input type = "submit" value = "Dodaj">
+            <input type = "reset" value = "Wyczyść">
+        </p>
+    </form>
+</body>
+</html>
