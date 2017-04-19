@@ -1,8 +1,10 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "baza";
+$servername = "zpi.cfo9cor2abpq.us-east-1.rds.amazonaws.com";
+$username = "ZPIUser";
+$password = "ZPIPassword";
+$dbname = "festiwale";
+
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -14,8 +16,10 @@ catch(PDOException $error){
 }
 
 try {
-    $sql = "INSERT INTO Festiwale (DataStart, DataKoniec, UtworWspolny, Nazwa, GlownyOrg)
-    VALUES (':start', ':koniec', ':utwor', ':nazwa', ':org')";
+
+
+    $sql = 'INSERT INTO festiwale (DataStart, DataKoniec, UtworWspolny, Nazwa, GlownyOrg)
+     VALUES (:start, :koniec, :utwor, :nazwa, :org)';
     $stmt = $conn->prepare($sql);
 
     // bind parameters to statement
