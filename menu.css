@@ -68,9 +68,10 @@ ol {
 }
 
 ol > li > ul > li {
-    background-color:#EEE;
+    background-color: #EEE;
     position: relative;
     z-index: 1000;
+}
 
 
 
