@@ -1,3 +1,14 @@
+body
+{
+    display: inline-block;
+    text-align: center;
+}
+html
+{
+    text-align: center;
+}
+
+
 ol {
     list-style-type:none;
     padding:0;
@@ -12,6 +23,8 @@ ol > li {
     float:left;
     background-color:#FDD700;
     width:150px;
+    display: inline-block;
+    text-align:center;
 }
 
 ol a {
@@ -19,58 +32,74 @@ ol a {
     color:#000;
     text-decoration:none;
     padding:0 5px;
+    text-align:center;
 }
 
 ol > li > a:hover {
     color:#09C;
+    text-align:center;
 }
 
 ol > li:hover {
     background-color:#EEE;
+    text-align:center;
 }
 
 ol > li > ul {
     list-style-type:none;
     padding:0;
     margin:0;
+    text-align:center;
 }
 
 ol > li {
     float:left;
     background-color:#FDD700;
-    width:150px;
     margin-left:1px;
+    text-align:center;
 }
 
 ol > li:first-child {
-    margin-left:0;
+    margin-left:50px;
+    text-align:center;
 }
 
 ol > li > ul > li > a {
     border-top:1px solid #FFF;
+    text-align:center;
 }
 
 ol {
     background-color:#FFF;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-position: inside;
 }
 
 ol > li > ul > li {
     background-color:#EEE;
+    text-align:center;
 }
 
 ol > li > ul > li:hover {
     background-color:#DDD;
+    text-align:center;
 }
 
 ol > li > ul > li:hover a {
     color:#09C;
+    text-align:center;
 }
 ol > li > ul {
-    display:none;
+    display: inline-block;
+    text-align:center;
 }
 
 ol > li:hover > ul {
     display:block;
+    text-align:center;
 }
 
 ol > li {
@@ -79,8 +108,10 @@ ol > li {
     width:150px;
     margin-left:1px;
     height:2em;
+    text-align: center;
 }
 
 ol > li:hover > a {
     color:#09C;
+    text-align:center;
 }
