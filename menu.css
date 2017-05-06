@@ -1,11 +1,5 @@
-body
-{
-    display: inline-block;
-    text-align: center;
-}
-html
-{
-    text-align: center;
+body{
+    background-color: lightblue;
 }
 
 
@@ -119,3 +113,8 @@ ol > li > ul > li:hover a {
     position: relative;
     z-index: 1000;
 }
+
+table p {
+    border: none;
+}
+
