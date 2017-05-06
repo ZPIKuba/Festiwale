@@ -1,23 +1,20 @@
-body{
-    background-color: lightblue;
-}
 
 
 ol {
     list-style-type:none;
     padding:0;
-    margin:0;
+    align-self: center;
+    margin-left: 10%;
     font-size:18px;
     height:2em;
+    width: auto;
     line-height:2em;
     text-align:center;
-    position:fixed;
 }
 
 ol > li {
     float:left;
     background-color:#FDD700;
-    width:150px;
     display: inline-block;
     text-align:center;
 }
@@ -30,6 +27,11 @@ ol a {
     padding:0 5px;
     position: relative;
     text-align:center;
+}
+p.krok
+{
+    color: chocolate;
+    font-size: larger;
 }
 
 
@@ -46,10 +48,7 @@ ol > li > ul {
 }
 
 
-ol > li:first-child {
-    margin-left:50px;
-    text-align:center;
-}
+
 
 ol > li > ul > li > a {
     border-top:1px solid #FFF;
