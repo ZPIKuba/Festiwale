@@ -19,7 +19,14 @@ ol > li {
     text-align:center;
 }
 
-
+.image {
+   position: relative;
+    width: 90%; /* for IE 6 */
+    height: 200px;
+    background-image: url('res/bannerW.png');
+    background-size: auto 200px;
+    clear:both;
+}
 ol a {
     display:block;
     color:#000;
@@ -27,6 +34,30 @@ ol a {
     padding:0 5px;
     position: relative;
     text-align:center;
+}
+h2:nth-of-type(1){
+     position: absolute;
+     top: 10px;
+     left:-80px;
+     width: 100%;
+     vertical-align: bottom;
+     horiz-align: right;
+ }
+h2:nth-of-type(2){
+    position: absolute;
+    top: 50px;
+    left:120px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+h2 span {
+    color: black;
+    font: bold 36px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(255,255,255); /* fallback color */
+    background: rgba(255,255,255, 0.0);
+    padding: 10px;
 }
 p.krok
 {

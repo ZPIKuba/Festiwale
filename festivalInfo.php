@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>O festiwalu</title>
-    <link href="menu.css" rel="stylesheet">
 </head>
 <body>
-<?php include 'main.html';?>
-<div style="display: inline-block;width: 60%;text-align: justify;margin: 10% 15% auto">
+<?php
+readfile('menu.html');
+?>
+<div style="width: 60%;text-align: justify;margin: 10% 15% auto; clear:left">
     <h2>Czym jest nasz festiwal?</h2>
     <p style="text-align: justify">
         Silnik rakietowy na paliwo stałe – rodzaj silnika rakietowego, w którym spalaniu w komorze wewnętrznego spalania ulega zhomogenizowana mieszanka paliwa i utleniacza. Komora wewnętrznego spalania ma formę tuby zawierającej blok mieszanki paliwowej. Silniki tego rodzaju są najstarszymi i najprostszymi rodzajami napędu, stosowanymi już w średniowiecznych Chinach. W komorze wewnętrznego spalania następuje zapłon zmagazynowanej w niej mieszaniny napędowej, zaś rozprężające się gorące gazy odprowadzane są do dysz w celu uzyskania pożądanego ciągu.
