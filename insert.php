@@ -4,8 +4,6 @@ $username = "ZPIUser";
 $password = "ZPIPassword";
 $dbname = "festiwale";
 
-
-
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
@@ -16,9 +14,7 @@ catch(PDOException $error){
 }
 
 try {
-
-
-    $sql = 'INSERT INTO festiwale (DataStart, DataKoniec, UtworWspolny, Nazwa, GlownyOrg)
+    $sql = 'INSERT INTO Festivals (StartDate, EndDate, CommonPiece, Name, MainOrg)
      VALUES (:start, :koniec, :utwor, :nazwa, :org)';
     $stmt = $conn->prepare($sql);
 
