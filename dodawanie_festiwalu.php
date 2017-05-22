@@ -20,7 +20,7 @@
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $conn->prepare("SELECT Name, Surname FROM Organisers");
+        $stmt = $conn->prepare("SELECT IdO, Name, Surname FROM Organisers");
         $stmt->execute();
 
         $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
@@ -43,7 +43,7 @@
                     $i = 0;
                     while(!is_null($result[$i]['Surname']) && !is_null($result[$i]['Name']))
                     {
-                        echo "<option>".$result[$i]['Surname']." ".$result[$i]['Name']."</option>";
+                        echo "<option value=\"".$result[$i]['IdO']."\">".$result[$i]['Surname']." ".$result[$i]['Name']."</option>";
                         $i++;
                     }
                     ?>

@@ -26,7 +26,7 @@
 
         $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
 
-        $stmt2 = $conn->prepare("SELECT Name, Surname FROM Organisers");
+        $stmt2 = $conn->prepare("SELECT IdO, Name, Surname FROM Organisers");
         $stmt2->execute();
 
         $result2 = $stmt2 -> fetchAll(PDO::FETCH_ASSOC);
@@ -50,7 +50,7 @@
                     $i = 0;
                     while(!is_null($result2[$i]['Surname']) && !is_null($result2[$i]['Name']))
                     {
-                        echo "<option>".$result2[$i]['Surname']." ".$result2[$i]['Name']."</option>";
+                        echo "<option value=\"".$result2[$i]['IdO']."\">".$result2[$i]['Surname']." ".$result2[$i]['Name']."</option>";
                         $i++;
                     }
                     ?>
