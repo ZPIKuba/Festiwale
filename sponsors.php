@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Sponsorzy</title>
-    <link href="menu.css" rel="stylesheet" >
 </head>
 <body>
 
