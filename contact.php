@@ -8,8 +8,10 @@
 
 </head>
 <body>
-<?php include 'main.html';?>
 
+<?php
+readfile('menu.html');
+?>
 <div style="margin-left: 30%;width: 60%;margin-top: 10%">
     <h2>
         Kontakt

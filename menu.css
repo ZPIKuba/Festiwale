@@ -1,6 +1,6 @@
 
 
-ol {
+nav ol {
     list-style-type:none;
     padding:0;
     align-self: center;
@@ -12,15 +12,22 @@ ol {
     text-align:center;
 }
 
-ol > li {
+nav ol > li {
     float:left;
     background-color:#FDD700;
     display: inline-block;
     text-align:center;
 }
 
-
-ol a {
+nav .image {
+   position: relative;
+    width: 90%; /* for IE 6 */
+    height: 200px;
+    background-image: url('res/bannerW.png');
+    background-size: auto 200px;
+    clear:both;
+}
+nav ol a {
     display:block;
     color:#000;
     text-decoration:none;
@@ -28,19 +35,45 @@ ol a {
     position: relative;
     text-align:center;
 }
-p.krok
+nav h2:nth-of-type(1){
+
+     position: absolute;
+     top: 10px;
+     left:-80px;
+     width: 100%;
+     vertical-align: bottom;
+     horiz-align: right;
+ }
+nav h2:nth-of-type(2){
+
+    position: absolute;
+    top: 50px;
+    left:120px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav h2 span {
+    color: black;
+    font: bold 36px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(255,255,255); /* fallback color */
+    background: rgba(255,255,255, 0.0);
+    padding: 10px;
+}
+nav p.krok
 {
     color: chocolate;
     font-size: larger;
 }
 
 
-ol > li:hover {
+nav ol > li:hover {
     background-color:#EEE;
     text-align:center;
 }
 
-ol > li > ul {
+nav ol > li > ul {
     list-style-type:none;
     padding:0;
     margin:0;
@@ -50,17 +83,17 @@ ol > li > ul {
 
 
 
-ol > li > ul > li > a {
+nav ol > li > ul > li > a {
     border-top:1px solid #FFF;
     text-align:center;
 }
 
-ol {
+nav ol {
     background-color:#FFF;
     position: relative;
 }
 
-ol > li > ul > li {
+nav ol > li > ul > li {
     background-color: #EEE;
     position: relative;
     z-index: 1000;
@@ -69,7 +102,7 @@ ol > li > ul > li {
 
 
 
-ol > li > ul {
+nav ol > li > ul {
     display: inline-block;
     text-align:center;
     display:none;
@@ -78,7 +111,7 @@ ol > li > ul {
 
 
 
-ol > li {
+nav ol > li {
     float:left;
     background-color:#ffED00;
     width:150px;
@@ -89,31 +122,31 @@ ol > li {
     position: relative;
 }
 
-ol > li:hover > a {
+nav ol > li:hover > a {
     color:#09C;
     text-align:center;
 }
-ol > li > a:hover {
+nav ol > li > a:hover {
     color:#09C;
 }
 
-ol > li:hover {
+nav ol > li:hover {
     background-color:#EEE;
 }
-ol > li:hover > ul {
+nav ol > li:hover > ul {
      display:block;
  }
-ol > li > ul > li:hover {
+nav ol > li > ul > li:hover {
     background-color:#DDD;
 }
 
-ol > li > ul > li:hover a {
+nav ol > li > ul > li:hover a {
     color:#09C;
     position: relative;
     z-index: 1000;
 }
 
-table p {
+nav table p {
     border: none;
 }
 
