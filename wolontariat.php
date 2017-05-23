@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Wolontariat</title>
-    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-<?php include 'main.html';?>
+<?php
+readfile('menu.html');
+?>
 <div style="margin-left: 5%;width: 80%">
     <h1>Wolontariat</h1>
     <p style="width: 70%;">Slot Art Festival powstaje przy wsparciu ponad 1000 wolontariuszy.
