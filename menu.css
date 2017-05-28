@@ -1,4 +1,32 @@
+nav input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
 
+nav input[type=text]:focus {
+    border-color:#333;
+}
+nav input[type=password] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav input[type=password]:focus {
+    border-color:#333;
+}
+
+nav input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
 
 nav ol {
     list-style-type:none;
@@ -10,13 +38,15 @@ nav ol {
     width: auto;
     line-height:2em;
     text-align:center;
-}
+    text-decoration: none;
 
+}
 nav ol > li {
     float:left;
     background-color:#FDD700;
     display: inline-block;
     text-align:center;
+    text-decoration: none;
 }
 
 nav .image {
@@ -34,6 +64,8 @@ nav ol a {
     padding:0 5px;
     position: relative;
     text-align:center;
+    text-decoration: none;
+
 }
 nav h2:nth-of-type(1){
 
@@ -71,6 +103,8 @@ nav p.krok
 nav ol > li:hover {
     background-color:#EEE;
     text-align:center;
+    text-decoration: none;
+
 }
 
 nav ol > li > ul {
@@ -78,6 +112,8 @@ nav ol > li > ul {
     padding:0;
     margin:0;
     position: relative;
+    text-decoration: none;
+
 }
 
 
@@ -86,17 +122,23 @@ nav ol > li > ul {
 nav ol > li > ul > li > a {
     border-top:1px solid #FFF;
     text-align:center;
+    text-decoration: none;
+
 }
 
 nav ol {
     background-color:#FFF;
     position: relative;
+    text-decoration: none;
+
 }
 
 nav ol > li > ul > li {
     background-color: #EEE;
     position: relative;
     z-index: 1000;
+    text-decoration: none;
+
 }
 
 
@@ -107,6 +149,8 @@ nav ol > li > ul {
     text-align:center;
     display:none;
     position: relative;
+    text-decoration: none;
+
 }
 
 
@@ -120,30 +164,42 @@ nav ol > li {
     height:2em;
     text-align: center;
     position: relative;
+    text-decoration: none;
+
 }
 
 nav ol > li:hover > a {
     color:#09C;
     text-align:center;
+    text-decoration: none;
+
 }
 nav ol > li > a:hover {
     color:#09C;
+    text-decoration: none;
+
 }
 
 nav ol > li:hover {
     background-color:#EEE;
+    text-decoration: none;
+
 }
 nav ol > li:hover > ul {
      display:block;
  }
 nav ol > li > ul > li:hover {
     background-color:#DDD;
+    text-decoration: none;
+
 }
 
 nav ol > li > ul > li:hover a {
     color:#09C;
     position: relative;
     z-index: 1000;
+    text-decoration: none;
+
 }
 
 nav table p {

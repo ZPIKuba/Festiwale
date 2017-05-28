@@ -11,28 +11,44 @@ session_start();
     }
     else
     {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
 
-        $query = "SELECT * FROM User WHERE login='".$_POST["login"]."'";
+    $servername = "zpi.cfo9cor2abpq.us-east-1.rds.amazonaws.com";
+    $username = "ZPIUser";
+    $password = "ZPIPassword";
+    $dbname = "festiwale";
 
-        if(!($database = mysql_connect($servername, $username, $password)))
-            die("could not connect to db</body></html>");
-        if(!mysql_select_db("Users", $database))
-            die("could not open user db</body></html>");
-        if(!($result = mysql_query($query, $database)))
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $stmt = $conn->prepare("SELECT * FROM Organisers WHERE Login='".$_POST["login"]."'");
+        $stmt->execute();
+
+        $result = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+        //print_r($result);
+        if (!empty($_POST["pass"])&&count($result)>0)
         {
-            print("<p> could not execute query</p>");
-            die(mysql_error()."</body></html>");
-        }
-
-
-        if (!empty($_POST["pass"]))
-        {
-            if(!strcmp($_POST["pass"],mysql_fetch_row($result)[1]))
+            if(!strcmp($_POST["pass"],$result[0]['Password']))
+            {
+                echo "asdawdasdawdasaw";
                 $_SESSION["login"] = test_input($_POST["login"]);
+
+                header('Location: /adminPanel.php');
+                die();
+
+
+            }
+            else
+                echo "wrong password";
         }
+    }
+    catch(PDOException $error)
+    {
+        die("ERROR: Could not connect. " . $error->getMessage());
+    }
+        header('Location: /festivalInfo.php');
+
 
     }
 
@@ -52,18 +68,3 @@ session_start();
     }
     ?>
 </head>
-
-<form method="post"
-      action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" >
-    <div><input type="text" name="login"  ><span>login</span></div>
-    <div><input type="password" name="pass"  ><span>haslo</span></div>
-    <div><input type="submit"></div>
-</form>
-
-
-
-<body>
-<a href="form2.php">back</a>
-
-</body>
-</html>
