@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Krzysztof
- * Date: 29.05.2017
- * Time: 15:34
- */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>logout</title>
+    <?php
+        session_start();
+        session_unset();
+        header('Location: /main.php');
+    ?>
+</head>
