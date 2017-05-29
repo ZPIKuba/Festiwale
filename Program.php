@@ -105,7 +105,7 @@ readfile('menu.html');
                       $tmp = $songs[$choirs[$x]['NameCh']][$y]['Title'];
                       $creationYear = $songs[$choirs[$x]['NameCh']][$y]['CreationYear'];
                       $duration = $songs[$choirs[$x]['NameCh']][$y]['Duration'];
-                      $composerId = $songs[$choirs[$x]['NameCh']][$y]['Composer'];
+                      $composerId=$songs[$choirs[$x]['NameCh']][$y]['Composer'];
                   //    $stmt = $conn->prepare("SELECT * FROM Composers WHERE IdComp=".$composerId);
                   //   $stmt->execute();
                 //     $composer = $stmt->fetchAll(PDO::FETCH_ASSOC);
