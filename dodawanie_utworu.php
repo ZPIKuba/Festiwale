@@ -8,20 +8,6 @@
     <title>Festiwale</title>
 </head>
 <body>
-<script type="text/javascript">
-    function kompozytor(status) {
-        if(status) {
-            document.getElementById("imie_kompozytora").disabled = false;
-            document.getElementById("nazwisko_kompozytora").disabled = false;
-            document.getElementById("opis_kompozytora").disabled = false;
-        }
-        else {
-            document.getElementById("imie_kompozytora").disabled = true;
-            document.getElementById("nazwisko_kompozytora").disabled = true;
-            document.getElementById("opis_kompozytora").disabled = true;
-        }
-    }
-</script>
 <h2>Dodawanie utworu</h2>
 <?php
 $servername = "zpi.cfo9cor2abpq.us-east-1.rds.amazonaws.com";
@@ -32,6 +18,7 @@ $dbname = "festiwale";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn -> query ('SET NAMES utf8');
 
     $stmt = $conn->prepare("SELECT IdComp, Name, Surname FROM Composers");
     $stmt->execute();
