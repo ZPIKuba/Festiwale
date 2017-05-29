@@ -32,7 +32,6 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd w procesie dodawania chóru!");
     }
-    echo "New choir created successfully";
 
     //dodawanie prezesa
     $sql = 'INSERT INTO Leaders (Name, Surname, Address, Phone, Email)
@@ -52,7 +51,6 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd w procesie dodawania prezesa!");
     }
-    echo "New leader created successfully";
 
     //dodawanie dyrygenta
     $sql = 'INSERT INTO Conductors (Name, Surname, Gender, Address, Phone, Email, Description)
@@ -74,7 +72,6 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd w procesie dodawania dyrygenta!");
     }
-    echo "New conductor created successfully";
 
     //dodawanie do tabeli Prezesuje
     $sql = 'INSERT INTO Leads (Leader, Choir, CoronationDate)
@@ -91,7 +88,6 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd - Leads!");
     }
-    echo "Succeeded - Leads";
 
     //dodawanie do tabeli Udział
     $sql = 'INSERT INTO TakePart (NameCh, Conductor, Festival)
@@ -107,7 +103,10 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd - TakePart!");
     }
-    echo "Succeeded - TakePart";
+    echo "<img src=\"res/okIcon.png\", style=\"width: 5%; height: auto\">";
+    echo "<h2>Dodano nowy chór!</h2>";
+    echo "<button type=\"button\" style='width: 300px;
+        margin: 4px 2px 4px 2px;' onclick=\"location.href='/adminPanel.php';\">Powrót do panelu administratora</button>";
 }
 catch(PDOException $e)
 {

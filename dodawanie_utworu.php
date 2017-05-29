@@ -52,12 +52,21 @@ catch(PDOException $error)
         </label>
     </p>
     <p><label>Chcę dodać kompozytora: <input id="nowy" name="nowy" type="checkbox" onclick="
-            document.getElementById('imie_kompozytora').disabled = !this.checked;
-            document.getElementById('nazwisko_kompozytora').disabled = !this.checked;
-            document.getElementById('opis_kompozytora').disabled = !this.checked;"></label></p>
-    <p><label>Imię: <font color ="red">*</font> <input id = "imie_kompozytora" name = "imie_kompozytora" type = "text" size = "50" placeholder = "Imię kompozytora" disabled required></label></p>
-    <p><label>Nazwisko: <font color ="red">*</font> <input id = "nazwisko_kompozytora" name = "nazwisko_kompozytora" type = "text" size = "50" placeholder = "Nazwisko kompozytora" disabled required></label></p>
-    <p><label>Opis: </label><textarea id = "opis_kompozytora" name = "opis_kompozytora" rows="5" cols="50" placeholder = "Opis kompozytora" disabled></textarea></p>
+           if(this.checked) {
+            document.getElementById('kompozytor').style.display = 'inline';
+            document.getElementById('imie_kompozytora').required = true;
+            document.getElementById('nazwisko_kompozytora').required = true;
+            }
+           else {
+            document.getElementById('kompozytor').style.display = 'none'
+            document.getElementById('imie_kompozytora').required = false;
+            document.getElementById('nazwisko_kompozytora').required = false;
+            }"></label></p>
+    <div id="kompozytor" style="display: none">
+        <p><label>Imię: <font color ="red">*</font> <input id = "imie_kompozytora" name = "imie_kompozytora" type = "text" size = "50" placeholder = "Imię kompozytora"></label></p>
+        <p><label>Nazwisko: <font color ="red">*</font> <input id = "nazwisko_kompozytora" name = "nazwisko_kompozytora" type = "text" size = "50" placeholder = "Nazwisko kompozytora"></label></p>
+        <p><label>Opis: </label><textarea id = "opis_kompozytora" name = "opis_kompozytora" rows="5" cols="50" placeholder = "Opis kompozytora"></textarea></p>
+    </div>
     <p><label>Rok powstania: <input id = "rok" name = "rok" type = "number" max="2017"></label></p>
     <p><label>Czas trwania (hh:mm:ss): <font color ="red">*</font> <input id = "czas" name = "czas" type = "time" step="1"></label></p>
     <p>

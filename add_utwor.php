@@ -30,7 +30,6 @@ if(isset($_REQUEST['nowy']))
     catch(PDOException $e) {
         die("Wystąpił błąd w procesie dodawania kompozytora!");
     }
-    echo "New composer created successfully";
 }
 
 try {
@@ -53,7 +52,6 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd w procesie dodawania utworu! ".$e->getMessage());
     }
-    echo "New piece created successfully";
 
     $sql = 'INSERT INTO Performs (Participant, Title)
      VALUES (:chor, :utwor)';
@@ -68,7 +66,10 @@ try {
     catch(PDOException $e) {
         die("Wystąpił błąd - Performs!");
     }
-    echo "Succeeded!";
+    echo "<img src=\"res/okIcon.png\", style=\"width: 5%; height: auto\">";
+    echo "<h2>Dodano nowy utwór!</h2>";
+    echo "<button type=\"button\" style='width: 300px;
+        margin: 4px 2px 4px 2px;' onclick=\"location.href='/adminPanel.php';\">Powrót do panelu administratora</button>";
 }
 catch(PDOException $e)
 {

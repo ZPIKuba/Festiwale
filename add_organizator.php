@@ -38,7 +38,10 @@ try {
     catch(PDOException $e) {
         die("Prawdopodobnie taki login już istnieje, spróbuj ponownie");
     }
-    echo "New organiser created successfully";
+    echo "<img src=\"res/okIcon.png\", style=\"width: 5%; height: auto\">";
+    echo "<h2>Dodano nowego organizatora!</h2>";
+    echo "<button type=\"button\" style='width: 300px;
+        margin: 4px 2px 4px 2px;' onclick=\"location.href='/adminPanel.php';\">Powrót do panelu administratora</button>";
 }
 catch(PDOException $e)
 {
