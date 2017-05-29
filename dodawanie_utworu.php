@@ -8,6 +8,20 @@
     <title>Festiwale</title>
 </head>
 <body>
+<script type="text/javascript">
+    function kompozytor(status) {
+        if(status) {
+            document.getElementById("imie_kompozytora").disabled = false;
+            document.getElementById("nazwisko_kompozytora").disabled = false;
+            document.getElementById("opis_kompozytora").disabled = false;
+        }
+        else {
+            document.getElementById("imie_kompozytora").disabled = true;
+            document.getElementById("nazwisko_kompozytora").disabled = true;
+            document.getElementById("opis_kompozytora").disabled = true;
+        }
+    }
+</script>
 <h2>Dodawanie utworu</h2>
 <?php
 $servername = "zpi.cfo9cor2abpq.us-east-1.rds.amazonaws.com";
@@ -50,6 +64,13 @@ catch(PDOException $error)
             </select>
         </label>
     </p>
+    <p><label>Chcę dodać kompozytora: <input id="nowy" name="nowy" type="checkbox" onclick="
+            document.getElementById('imie_kompozytora').disabled = !this.checked;
+            document.getElementById('nazwisko_kompozytora').disabled = !this.checked;
+            document.getElementById('opis_kompozytora').disabled = !this.checked;"></label></p>
+    <p><label>Imię: <font color ="red">*</font> <input id = "imie_kompozytora" name = "imie_kompozytora" type = "text" size = "50" placeholder = "Imię kompozytora" disabled required></label></p>
+    <p><label>Nazwisko: <font color ="red">*</font> <input id = "nazwisko_kompozytora" name = "nazwisko_kompozytora" type = "text" size = "50" placeholder = "Nazwisko kompozytora" disabled required></label></p>
+    <p><label>Opis: </label><textarea id = "opis_kompozytora" name = "opis_kompozytora" rows="5" cols="50" placeholder = "Opis kompozytora" disabled></textarea></p>
     <p><label>Rok powstania: <input id = "rok" name = "rok" type = "number" max="2017"></label></p>
     <p><label>Czas trwania (hh:mm:ss): <font color ="red">*</font> <input id = "czas" name = "czas" type = "time" step="1"></label></p>
     <p>
