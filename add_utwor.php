@@ -12,13 +12,36 @@ catch(PDOException $error){
     die("ERROR: Could not connect. " . $error->getMessage());
 }
 
+if(isset($_REQUEST['nowy']))
+{
+    $sql = 'INSERT INTO Composers (Name, Surname, Description)
+     VALUES (:imie_kompozytora, :nazwisko_kompozytora, :opis_kompozytora)';
+    $stmt = $conn->prepare($sql);
+
+    $stmt->bindParam(':imie_kompozytora', $_REQUEST['imie_kompozytora']);
+    $stmt->bindParam(':nazwisko_kompozytora', $_REQUEST['nazwisko_kompozytora']);
+    $stmt->bindParam(':opis_kompozytora', $_REQUEST['opis_kompozytora']);
+
+    try {
+        $stmt->execute();
+        $id_kompozytora = $conn->lastInsertId();
+    }
+    catch(PDOException $e) {
+        die("Wystąpił błąd w procesie dodawania kompozytora!");
+    }
+    echo "New composer created successfully";
+}
+
 try {
-    $sql = 'INSERT INTO Pieces (Title, Composer, CreationDate, Duration)
+    $sql = 'INSERT INTO Pieces (Title, Composer, CreationYear, Duration)
      VALUES (:tytul, :kompozytor, :rok, :czas)';
     $stmt = $conn->prepare($sql);
 
     $stmt->bindParam(':tytul', $_REQUEST['tytul']);
-    $stmt->bindParam(':kompozytor', $_REQUEST['kompozytor']);
+    if(isset($_REQUEST['nowy']))
+        $stmt->bindParam(':kompozytor', $id_kompozytora);
+    else
+        $stmt->bindParam(':kompozytor', $_REQUEST['kompozytor']);
     $stmt->bindParam(':rok', $_REQUEST['rok']);
     $stmt->bindParam(':czas', $_REQUEST['czas']);
 
@@ -27,7 +50,7 @@ try {
         $id_utworu = $conn->lastInsertId();
     }
     catch(PDOException $e) {
-        die("Wystąpił błąd w procesie dodawania utworu!");
+        die("Wystąpił błąd w procesie dodawania utworu! ".$e->getMessage());
     }
     echo "New piece created successfully";
 
