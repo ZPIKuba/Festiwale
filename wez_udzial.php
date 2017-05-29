@@ -25,6 +25,7 @@ readfile('menu.html');
     <p style="text-align: center;margin-top: 10px";>
         <img style="position: absolute;right: 30px;width: 500px;padding: 10px" src="res/partyAfterZPI.jpg">
     </p>
+
     </div>
     <div style="float: left; width: 50%">
         <p style="text-align: left;font-size: 120%;">Już dzisiaj wykup wjazdówkę na festiwal Twojego życia!<br>
@@ -39,7 +40,11 @@ readfile('menu.html');
             <li style="text-align: left">nuty utworu głównego - <font color="#dc143c">wykonamy go wszyscy razem!</font></li>
         </ul>
         <p style="font-size: 25px;">Bilety dostępne w kasach NFM oraz w sekretariacie Akademii Muzycznej</p>
+        <p style="text-align: center;margin-top: 10px">
+            <img style="display: block;margin: auto;height: 600px" src="res/plakat.jpg"
+        </p>
     </div>
+
 
 </div>
 </body>
