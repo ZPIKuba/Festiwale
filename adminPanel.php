@@ -36,6 +36,8 @@ if(!isset($_SESSION["login"]))
         margin: 4px 2px 4px 2px;' onclick="location.href='/dodawanie_choru.php';">Dodawanie chórów</button>
     <button type="button" class="btn btn-info" style='width: 250px;
         margin: 4px 2px 4px 2px;' onclick="location.href='/dodawanie_utworu.php';">Dodawanie utworów</button>
+    <button type="button" class="btn btn-info" style='width: 250px;
+        margin: 4px 2px 4px 2px;' onclick="location.href='/edycja_organizatora.php';">Edytuj swoje dane</button>
 </div>
 </body>
 </html>

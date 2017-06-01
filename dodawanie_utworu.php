@@ -41,6 +41,11 @@ catch(PDOException $error)
             Kompozytor: <font color ="red">*</font>
             <select name = "kompozytor">
                 <?php
+                foreach ($result as $key => $row)
+                {
+                    $surname[$key]  = $row['Surname'];
+                }
+                array_multisort($surname, SORT_ASC, $result);
                 $i = 0;
                 while(!is_null($result[$i]['Surname']) && !is_null($result[$i]['Name']))
                 {
@@ -74,6 +79,11 @@ catch(PDOException $error)
             Chór: <font color ="red">*</font>
             <select name = "chor">
                 <?php
+                foreach ($result2 as $key => $row)
+                {
+                    $name[$key]  = $row['NameCh'];
+                }
+                array_multisort($name, SORT_ASC, $result2);
                 $i = 0;
                 while(!is_null($result2[$i]['NameCh']))
                 {
