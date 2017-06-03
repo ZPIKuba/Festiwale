@@ -34,6 +34,7 @@
     <p>
         <input type = "submit" value = "Dodaj">
         <input type = "reset" value = "Wyczyść">
+        <input type = "button" value = "Anuluj" onclick="location.href='/adminPanel.php'">
     </p>
 </form>
 </body>

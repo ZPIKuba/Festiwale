@@ -54,6 +54,7 @@ catch(PDOException $error)
     <p>
         <input type = "submit" value = "Zmień">
         <input type = "reset" value = "Wyczyść">
+        <input type = "button" value = "Anuluj" onclick="location.href='/adminPanel.php'">
     </p>
 </form>
 </body>
