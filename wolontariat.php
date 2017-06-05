@@ -8,7 +8,7 @@
 <?php
 readfile('menu.html');
 ?>
-<div style="margin-left: 5%;width: 80%">
+<div style="margin-left: 10%;width: 80%">
     <h1>Wolontariat</h1>
     <p style="width: 70%;">Slot Art Festival powstaje przy wsparciu ponad 1000 wolontariuszy.
         Współpraca, twórczość, dzielenie się oraz rozwój to fundamenty wolontariatu. Praca i zaangażowanie każdej osoby
@@ -21,16 +21,16 @@ readfile('menu.html');
         Zmień przeglądarkę bo ta nie działa
     </iframe>
     <p class="krok">
-        Jak zostać wolontariuszem?
+    <h2>Jak zostać wolontariuszem?</h2>
     </p>
     <p class="krok">
-        Krok 1
+    <h3>Krok 1</h3>
     </p>
     <p>
         Przeczytaj proszę regulamin, następnie opisy ekip i zdecyduj do której chcesz dołączyć.
     </p>
     <p class="krok">
-        Krok 2
+    <h3>Krok 2</h3>
     </p>
     <p>
         Wypełnij i wyślij zgłoszenie.
@@ -40,14 +40,14 @@ readfile('menu.html');
         e, proponujemy Ci wybrać 2 ekipy, w tym jedną z tych liczniejszych (ochrona, sanitarka, technika).
     </p>
     <p class="krok">
-    Krok 3
+    <h3>Krok 3</h3>
 </p>
     <p>
         Poczekaj na odpowiedź mailową, w której, jeśli dostałeś się do wybranej ekipy otrzymasz umowę wolontariacką,
         wzór zgody opiekunów (dotyczy osób w wieku 16-17 lat), kontakt do szefa ekipy.
     </p>
     <p class="krok">
-        Krok 4
+    <h3>Krok 4</h3>
     </p>
     <p>
         Zaplanuj podróż J i przyjedź 2 lipca 2017* roku do Lubiąża k.Wrocławia. Wolontariat obejmuje okres od 2 do 9
@@ -60,7 +60,9 @@ readfile('menu.html');
         kafejkach.
     </p>
 </div>
-
+<?php
+readfile('stopka.html');
+?>
 
 </body>
 </html>
