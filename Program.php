@@ -87,7 +87,7 @@ readfile('menu.html');
         }
         array_multisort($name, SORT_ASC, $choirs);
          for ($x = 0; $x < count($choirs); $x++) {
-             $stmt = $conn->prepare("SELECT * FROM Pieces WHERE IdPiece IN (
+             $stmt = $conn->prepare("SELECT * FROM Pieces INNER JOIN Composers ON Pieces.Composer=Composers.IdComp WHERE IdPiece IN (
                       SELECT Title FROM Performs INNER JOIN Choirs ON Performs.Participant=".$choirs[$x]['IdCh'].")");
              $stmt->execute();
              $songs[$choirs[$x]['NameCh']]=$stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -121,8 +121,10 @@ readfile('menu.html');
                       $tmp = $songs[$choirs[$x]['NameCh']][$y]['Title'];
                       $creationYear = $songs[$choirs[$x]['NameCh']][$y]['CreationYear'];
                       $duration = $songs[$choirs[$x]['NameCh']][$y]['Duration'];
-                      $composerId=$songs[$choirs[$x]['NameCh']][$y]['Composer'];
-                  //    $stmt = $conn->prepare("SELECT * FROM Composers WHERE IdComp=".$composerId);
+                      $composerId=$songs[$choirs[$x]['NameCh']][$y]['Name'];
+                      $composerSur=$songs[$choirs[$x]['NameCh']][$y]['Surname'];
+
+                      //    $stmt = $conn->prepare("SELECT * FROM Composers WHERE IdComp=".$composerId);
                   //   $stmt->execute();
                 //     $composer = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -130,7 +132,7 @@ readfile('menu.html');
 
 
                       echo "<tr>
-<td><a href='#' id=\"myBtn\" onclick=\"f1('".$tmp."','".$creationYear."','".$duration."','".$composerId."')\">".$tmp."</a>
+<td><a href='#' id=\"myBtn\" onclick=\"f1('".$tmp."','".$creationYear."','".$duration."','".$composerId."','".$composerSur."')\">".$tmp."</a>
   </td>
 <td>".(empty($duration) ? ('--') : ($duration)) ."</td>
 
@@ -169,17 +171,17 @@ readfile('menu.html');
     // Get the modal
     var modal = document.getElementById('myModal');
 
-    function f1(str, str2, str3, str4) {
+    function f1(str, str2, str3, str4,str5) {
         modal.style.display = "block";
         modal.innerHTML="<div class=\"modal-content\"> <span class=\"close\" " +
             "onclick=\"f2()\">&times;</span> <p>"+
             "<b>Utwor:</b> "+str+"<br>"+
             "<b>Rok powstania: </b>"+str2+"<br>"+
             "<b>Czas trwania: </b>"+str3+"<br>"+
-            "<b>Kompozytor: </b>"+str4+"<br>"+
+            "<b>Kompozytor: </b>"+str4+" "+str5+"<br>";
 
 
-            "</p> </div>";
+        "</p> </div>";
     }
 
    function f2() {
