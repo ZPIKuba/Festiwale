@@ -28,7 +28,7 @@ readfile('menu.html');
             </td>
             <td>
                 <p>Janek Kowalski<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">janekkowalski@gmail.com</a>
                 </p>
             </td>
         </tr>
@@ -38,14 +38,14 @@ readfile('menu.html');
             </td>
             <td>
                 <p>Ewa Skórska<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">ewaskorska@gmail.com</a>
                 </p>
             </td>
         </tr>
         <tr align="center" valign="top">
             <td><p>Dyrektor ds. marketingu:</p></td>
             <td><p>Jakub Granieczny<br/>
-                <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a>
+                <a href="mailto:kosciuszkopiotr@gmail.com">jakubgranieczny@gmail.com</a>
             </p>
             </td>
         </tr>
@@ -53,21 +53,21 @@ readfile('menu.html');
             <td><p>Dyrektor ds. finansów:</p></td>
             <td>
                 <p>Krzysztof Bykowski<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a>&nbsp;</p>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">krzysztofbykowsi@gmail.com</a>&nbsp;</p>
             </td>
         </tr>
         <tr align="center" valign="top">
             <td><p>Koordynator wolontariatu:</p></td>
             <td>
                 <p>Piotr Kościuszko<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a>&nbsp;</p>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">kosciuszkopiotr@gmail.com</a>&nbsp;</p>
             </td>
         </tr>
         <tr align="center" valign="top">
             <td><p>Sponsoring:</p></td>
             <td>
                 <p> Prezydent Duda<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">Mail</a><br/>&nbsp;</p>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">prezydentduda@gmail.com</a><br/>&nbsp;</p>
             </td>
         </tr>
         </tbody>

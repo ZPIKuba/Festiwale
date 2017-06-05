@@ -7,12 +7,7 @@
 </head>
 <body>
 <?php
-/**
- * Created by PhpStorm.
- * User: Zenek
- * Date: 29.05.2017
- * Time: 00:09
- */
+
 
 readfile('menu.html');
 ?>
