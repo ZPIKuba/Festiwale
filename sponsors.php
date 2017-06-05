@@ -40,5 +40,8 @@ readfile('menu.html');
         <th></th>
     </tr>
 </table>
+<?php
+readfile('stopka.html');
+?>
 </body>
 </html>
