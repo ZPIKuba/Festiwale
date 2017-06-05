@@ -1,0 +1,244 @@
+body{
+    background-image: url("res/backgroundEwy1.jpg"); /* fallback */
+   background-repeat: repeat;
+
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+
+
+.footer {position: relative;
+    margin-top: -180px; /* wysokość stopki z minusem :) */
+    height: 180px;
+    clear:both;
+    background-color: rgba(206,212,76,0.62);
+}
+
+nav{
+    background-image: url("res/backgroundEwy2.jpg"); /* fallback */
+
+    background-position: bottom;
+
+}
+
+nav input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav input[type=text]:focus {
+    border-color:#333;
+}
+nav input[type=password] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav input[type=password]:focus {
+    border-color:#333;
+}
+
+nav input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+nav ol {
+    list-style-type:none;
+    padding:0;
+    align-self: center;
+    margin-left: 10%;
+    font-size:18px;
+    height:2em;
+    width: auto;
+    line-height:2em;
+    text-align:center;
+    text-decoration: none;
+
+}
+nav ol > li {
+    float:left;
+    background-color:#FDD700;
+    display: inline-block;
+    text-align:center;
+    text-decoration: none;
+}
+
+nav .image {
+   position: relative;
+    width: 90%; /* for IE 6 */
+    height: 200px;
+    background-image: url('res/bannerW.png');
+    background-size: auto 200px;
+    clear:both;
+}
+nav ol a {
+    display:block;
+    color:#000;
+    text-decoration:none;
+    padding:0 5px;
+    position: relative;
+    text-align:center;
+    text-decoration: none;
+
+}
+
+
+
+nav h2:nth-of-type(1){
+
+     position: absolute;
+     top: 10px;
+     left:-80px;
+     width: 100%;
+     vertical-align: bottom;
+     horiz-align: right;
+ }
+nav h2:nth-of-type(2){
+
+    position: absolute;
+    top: 50px;
+    left:120px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+nav h2 span {
+    color: black;
+    font: bold 36px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(255,255,255); /* fallback color */
+    background: rgba(255,255,255, 0.0);
+    padding: 10px;
+}
+nav p.krok
+{
+    color: chocolate;
+    font-size: larger;
+}
+
+
+nav ol > li:hover {
+   background-color:#EEE;
+    text-align:center;
+    text-decoration: none;
+
+}
+
+nav ol > li > ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    position: relative;
+    text-decoration: none;
+
+}
+
+
+
+
+nav ol > li > ul > li > a {
+    border-top:1px solid #FFF;
+    text-align:center;
+    text-decoration: none;
+
+}
+
+nav ol {
+   /* background-color:#FFF;*/
+    position: relative;
+    text-decoration: none;
+
+}
+
+nav ol > li > ul > li {
+   background-color: #EEE;
+    position: relative;
+    z-index: 1000;
+    text-decoration: none;
+
+}
+
+
+
+
+nav ol > li > ul {
+    display: inline-block;
+    text-align:center;
+    display:none;
+    position: relative;
+    text-decoration: none;
+
+}
+
+
+
+nav ol > li {
+    float:left;
+    background-color:#ffED00;
+    width:150px;
+    margin-right:1px;
+    margin-top: 1px;
+    height:2em;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+
+}
+
+nav ol > li:hover > a {
+    color:#09C;
+    text-align:center;
+    text-decoration: none;
+
+}
+nav ol > li > a:hover {
+    color:#09C;
+    text-decoration: none;
+
+}
+
+nav ol > li:hover {
+    background-color:#EEE;
+    text-decoration: none;
+
+}
+nav ol > li:hover > ul {
+     display:block;
+ }
+nav ol > li > ul > li:hover {
+    background-color:#DDD;
+    text-decoration: none;
+
+}
+
+nav ol > li > ul > li:hover a {
+    color:#09C;
+    position: relative;
+    z-index: 1000;
+    text-decoration: none;
+
+}
+
+nav table p {
+    border: none;
+}
+
