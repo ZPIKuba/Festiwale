@@ -32,7 +32,7 @@
 <?php
 readfile('menu.html');
 ?>
-<div style="width: 60%;text-align: justify;margin: 0% 15% auto; flex: 1;">
+<div style="margin: 25px 15px 15px 15px;">
     <h2 class="info" id="wolontariat">Wolontariat</h2>
     <p style="width: 70%;" align="justify">Wrocławski Festiwal Chórów Osiedlowych to niezapomniane wydarzenie muzyczne, ale także spotkania
         z ciekawymi ludźmi i wspaniała atmosfera, którą tworzą wszyscy jego uczestnicy. Jak co roku poszukujemy wolontariuszy,

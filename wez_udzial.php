@@ -7,11 +7,10 @@
 </head>
 <body>
 <?php
-
-
 readfile('menu.html');
 ?>
-    <div style="margin-left:10%;margin-top:10%;width: 70%;">
+
+    <div style="margin-left:10%;width: 70%;">
     <header>
         <h1 style="font-size: 40px;">Weź udział!</h1>
     </header>
