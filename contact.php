@@ -4,6 +4,57 @@
     <meta charset="UTF-8">
     <title>Kontakt</title>
     <link href="menu.css" rel="stylesheet">
+<style>
+    table
+    {
+       /*border: solid;*/
+    }
+    td
+    {
+       /* border-bottom:1pt solid black;
+        padding-right: 60px;
+
+        /* background-color: antiquewhite;*/
+    }
+    tr>td:nth-of-type(1)
+    {
+        font-weight: 600;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    tr:nth-of-type(1)
+    {
+        background-color: rgba(0,0,0,0.3);
+    }
+    tr:nth-of-type(2)
+    {
+        background-color: rgba(80,80,80,0.3);
+    }
+    tr:nth-of-type(3)
+    {
+        background-color: rgba(0,0,0,0.3);
+    }
+    tr:nth-of-type(4)
+    {
+        background-color: rgba(80,80,80,0.3);
+    }
+    tr:nth-of-type(5)
+    {
+        background-color: rgba(0,0,0,0.3);
+    }
+    tr:nth-of-type(6)
+    {
+        background-color: rgba(80,80,80,0.3);
+    }
+    tr:nth-of-type(7)
+    {
+        background-color: rgba(0,0,0,0.3);
+    }
+    tr:nth-of-type(8)
+    {
+        background-color: rgba(80,80,80,0.3);
+    }
+</style>
 
 
 </head>
@@ -12,7 +63,7 @@
 <?php
 readfile('menu.html');
 ?>
-<div style="margin-left: 30%;width: 60%;margin-top: 10%">
+<div style="margin-left: 20%;width: 70%;margin-top: 0%">
     <h2>
         Kontakt
     </h2>
@@ -20,7 +71,7 @@ readfile('menu.html');
 
     <h2>&nbsp;</h2>
 
-    <table style="display: inline-block">
+    <table cellpadding="0" cellspacing="0" style="display: inline-block;border-color: #333333">
         <tbody>
         <tr align="center" valign="top">
             <td>
@@ -67,7 +118,7 @@ readfile('menu.html');
             <td><p>Sponsoring:</p></td>
             <td>
                 <p> Prezydent Duda<br/>
-                    <a href="mailto:kosciuszkopiotr@gmail.com">prezydentduda@gmail.com</a><br/>&nbsp;</p>
+                    <a href="mailto:kosciuszkopiotr@gmail.com">prezydentduda@gmail.com</a></p>
             </td>
         </tr>
         </tbody>

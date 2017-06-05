@@ -157,8 +157,8 @@ readfile('menu.html');
     </h2>
 <div style="margin-left: 5%;width: 80%">
     <div class="column">
-        <img src="res/galeria/choirOne.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </div>
+        <img src="res/galeria/choirOne.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%; " onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+       </div>
     <div class="column">
         <img src="res/galeria/choirTwo.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
     </div>
