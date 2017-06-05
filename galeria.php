@@ -157,31 +157,31 @@ readfile('menu.html');
     </h2>
 <div style="margin-left: 5%;width: 80%">
     <div class="column">
-        <img src="res/galeria/choirOne.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <img src="res/galeria/choirOne.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirTwo.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <img src="res/galeria/choirTwo.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirThree.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <img src="res/galeria/choirThree.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirFour.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <img src="res/galeria/choirFour.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirFive.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <img src="res/galeria/choirFive.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirSix.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        <img src="res/galeria/choirSix.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirSeven.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        <img src="res/galeria/choirSeven.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirEight.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        <img src="res/galeria/choirEight.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
     </div>
     <div class="column">
-        <img src="res/galeria/choirNine.jpg" style="width:250px;height: 200px;object-fit: cover" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        <img src="res/galeria/choirNine.jpg" style="width:250px;height: 200px;object-fit: cover;margin-top: 3%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
     </div>
 </div>
 </div>
@@ -239,31 +239,31 @@ readfile('menu.html');
 
 
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirOne.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(1)" >
+            <img class="demo cursor" src="res/galeria/choirOne.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(1)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirTwo.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(2)" >
+            <img class="demo cursor" src="res/galeria/choirTwo.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(2)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirThree.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(3)" >
+            <img class="demo cursor" src="res/galeria/choirThree.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(3)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirFour.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(4)" >
+            <img class="demo cursor" src="res/galeria/choirFour.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(4)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirFive.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(5)" >
+            <img class="demo cursor" src="res/galeria/choirFive.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(5)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirSix.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(6)" >
+            <img class="demo cursor" src="res/galeria/choirSix.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(6)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirSeven.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(7)" >
+            <img class="demo cursor" src="res/galeria/choirSeven.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(7)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirEight.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(8)" >
+            <img class="demo cursor" src="res/galeria/choirEight.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(8)" >
         </div>
         <div class="column">
-            <img class="demo cursor" src="res/galeria/choirNine.jpg" style="width:200px;height: 150px;object-fit: cover" onclick="currentSlide(9)" >
+            <img class="demo cursor" src="res/galeria/choirNine.jpg" style="width:200px;height: 150px;object-fit: cover;margin-top: 3%" onclick="currentSlide(9)" >
         </div>
     </div>
 </div>
