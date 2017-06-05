@@ -45,6 +45,19 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+         h2.info{
+             background-color: #FDD700;
+             padding: 15px 0px 0px 20px;
+             font-size: 20px;
+             font: bold 36px/45px Helvetica, Sans-Serif;
+
+         }
+        h2.info:nth-of-type(1)
+        {
+
+            background-color: #BDBDBD;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +67,7 @@ readfile('menu.html');
 ?>
 
 <div class="container">
-    <h2>Program</h2>
+    <h2 class="info" id="program">Program</h2>
     <?php
     $servername = "zpi.cfo9cor2abpq.us-east-1.rds.amazonaws.com";
     $username = "ZPIUser";
