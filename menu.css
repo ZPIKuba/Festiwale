@@ -1,5 +1,5 @@
 body{
-    background-image: url("res/background2.jpg");
+    background-image: url("res/backgroundEwy1.jpg");
     min-height: 100%;
 }
 html, body {
@@ -19,7 +19,9 @@ html {
 .footer {position: relative;
     margin-top: -180px; /* wysokość stopki z minusem :) */
     height: 180px;
-    clear:both;}
+    clear:both;
+    background-color: rgba(206,212,76,0.62);
+}
 
 nav{
     background-color: #FFFFFF;
