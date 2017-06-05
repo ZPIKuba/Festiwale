@@ -55,7 +55,6 @@
          }
         h2.info:nth-of-type(1)
         {
-
             background-color: #BDBDBD;
         }
     </style>
@@ -83,6 +82,11 @@ readfile('menu.html');
         $stmt->execute();
 
         $choirs = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+        foreach ($choirs as $key => $row)
+        {
+            $name[$key]  = $row['NameCh'];
+        }
+        array_multisort($name, SORT_ASC, $choirs);
          for ($x = 0; $x < count($choirs); $x++) {
              $stmt = $conn->prepare("SELECT * FROM Pieces WHERE IdPiece IN (
                       SELECT Title FROM Performs INNER JOIN Choirs ON Performs.Participant=".$choirs[$x]['IdCh'].")");
