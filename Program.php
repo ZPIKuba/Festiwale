@@ -113,8 +113,8 @@ readfile('menu.html');
     <div id=\"demo".$x."\" class=\"collapse\" >
                  <table width='500'>
    <tr>
-   <th>Utwor</th>
-   <th>Dlugosc</th>
+   <th>Utwór</th>
+   <th>Dlugość</th>
 </tr>";
 
                   for ($y = 0; $y < count($songs[$choirs[$x]['NameCh']]); $y++) {
