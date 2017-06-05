@@ -1,6 +1,7 @@
 body{
-    background-image: url("res/backgroundEwy1.jpg");
-    min-height: 100%;
+    background-image: url("res/backgroundEwy1.jpg"); /* fallback */
+   background-repeat: repeat;
+
 }
 html, body {
     margin:0;
@@ -24,7 +25,10 @@ html {
 }
 
 nav{
-    background-color: #FFFFFF;
+    background-image: url("res/backgroundEwy2.jpg"); /* fallback */
+
+    background-position: bottom;
+
 }
 
 nav input[type=text] {
@@ -133,7 +137,7 @@ nav p.krok
 
 
 nav ol > li:hover {
-    background-color:#EEE;
+   background-color:#EEE;
     text-align:center;
     text-decoration: none;
 
@@ -159,14 +163,14 @@ nav ol > li > ul > li > a {
 }
 
 nav ol {
-    background-color:#FFF;
+   /* background-color:#FFF;*/
     position: relative;
     text-decoration: none;
 
 }
 
 nav ol > li > ul > li {
-    background-color: #EEE;
+   background-color: #EEE;
     position: relative;
     z-index: 1000;
     text-decoration: none;
