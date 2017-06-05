@@ -90,11 +90,11 @@ readfile('menu.html');
     <h2 class="info" id="gdzie">Gdzie?</h2>
     <div style="display: flex;">
         <div id="place">
-            <h3>Miejsce realizacji Festiwalu:</h3>
-            <h4>Dom Kultury Bakara we Wrocławiu, ul. Różana 4</h4>
-            <h3>Dojazd komunikacją miejską:</h3>
-            <h4>- przystanek: Bzowa (Centrum Zajezdnia)</h4>
-            <h4>- linie: 4, 5, 11, 14, 24, 126, 134</h4>
+            <h2>Miejsce realizacji Festiwalu:</h2>
+            <h3>Dom Kultury Bakara we Wrocławiu, ul. Różana 4</h3>
+            <h2>Dojazd komunikacją miejską:</h2>
+            <h3>- przystanek: Bzowa (Centrum Zajezdnia)</h3>
+            <h3>- linie: 4, 5, 11, 14, 24, 126, 134</h3>
         </div>
         <div id="map" style="flex: 1;"></div>
     </div>
