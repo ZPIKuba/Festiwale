@@ -73,6 +73,8 @@ readfile('menu.html');
         </tbody>
     </table>
 </div>
-
+<?php
+readfile('stopka.html');
+?>
 </body>
 </html>

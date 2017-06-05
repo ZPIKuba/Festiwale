@@ -177,6 +177,8 @@ readfile('menu.html');
         }
     }
 </script>
-
+<?php
+readfile('stopka.html');
+?>
 </body>
 </html>

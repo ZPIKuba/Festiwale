@@ -130,5 +130,8 @@ readfile('menu.html');
 
 </div>
 </div>
+<?php
+readfile('stopka.html');
+?>
 </body>
 </html>
