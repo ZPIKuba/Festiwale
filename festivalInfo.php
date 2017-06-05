@@ -6,7 +6,13 @@
     <style>
         #map {
             height: 400px;
-            width: 100%;
+            width: 50%;
+            float: left;
+        }
+        #place{
+            height: 400px;
+            width: 50%;
+            float: right;
         }
         h2.info{
             background-color: #FDD700;
@@ -72,17 +78,32 @@ readfile('menu.html');
     letter-spacing: -1px;
     background: rgb(255,255,255); /* fallback color */
     background: rgba(255,255,255, 0.0);
-    padding: 50px;
-">
-            20 - 25.05.2017</span>
+    padding: 50px;">
+            11.06.2017</span>
+    <span style=" color: black;
+    font: bold 30px/40px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(255,255,255); /* fallback color */
+    background: rgba(255,255,255, 0.0);
+    padding: 50px;">
+            Godzina 12:00</span>
     <h2 class="info" id="gdzie">Gdzie?</h2>
-    <div id="map"></div>
+    <div style="display: flex;">
+        <div id="place">
+            <h3>Miejsce realizacji Festiwalu:</h3>
+            <h4>Dom Kultury Bakara we Wrocławiu, ul. Różana 4</h4>
+            <h3>Dojazd komunikacją miejską:</h3>
+            <h4>- przystanek: Bzowa (Centrum Zajezdnia)</h4>
+            <h4>- linie: 4, 5, 11, 14, 24, 126, 134</h4>
+        </div>
+        <div id="map" style="flex: 1;"></div>
+    </div>
     <script>
         function initMap() {
 
-            var uluru = {lat: 53.713143, lng: 16.772538};
+            var uluru = {lat: 51.0961937, lng: 16.9941827};
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
+                zoom: 14,
                 center: uluru
             });
             var marker = new google.maps.Marker({
@@ -95,38 +116,95 @@ readfile('menu.html');
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt1SSZ6H_jN5XQ9VMk8CjrSDu2qcSX84I&callback=initMap">
     </script>
     <h2 class="info" id="co">Co?</h2>
-    <p style="text-align: justify">
-        Silnik rakietowy na paliwo stałe – rodzaj silnika rakietowego, w którym spalaniu w komorze wewnętrznego spalania ulega zhomogenizowana mieszanka paliwa i utleniacza. Komora wewnętrznego spalania ma formę tuby zawierającej blok mieszanki paliwowej. Silniki tego rodzaju są najstarszymi i najprostszymi rodzajami napędu, stosowanymi już w średniowiecznych Chinach. W komorze wewnętrznego spalania następuje zapłon zmagazynowanej w niej mieszaniny napędowej, zaś rozprężające się gorące gazy odprowadzane są do dysz w celu uzyskania pożądanego ciągu.
-        Krytyczną wartością tego rodzaju napędu jest powierzchnia płonącego gęstego paliwa, determinująca siłę produkowanego w ten sposób ciągu. W celu jej zwiększenia, w zgromadzonym paliwie wykonuje się nacięcia – rowki i szpary zwiększające powierzchnie paliwa podlegającego ekspozycji na działanie ognia. Wymaga to jednak dużej precyzji, gdyż zbyt wielka liczba nacięć – a co za tym idzie zbyt duża powierzchnia zapłonu – może doprowadzić do zbyt wielkiego ciśnienia wewnątrz komory spalania i eksplozji silnika.
-        Zalety
-        Podstawową zaletą silników na paliwo stałe jest duża stabilność oraz łatwość przechowywania przez długi czas. Paliwa stałe charakteryzują się dużą gęstością energii i szybkim czasem spalania, dość dobrze tolerują wstrząsy, wibracje i przyspieszenia. Nie wymagają też specjalnych pomp, co czyni pocisk mniej skomplikowanym.
-        Słabości
-        Podstawową słabością napędu na paliwo stałe jest niemożliwość jego zatrzymania i korekty ciągu. Po uruchomieniu zapłonu, całe zgromadzone w zbiorniku paliwo ulega wypaleniu bez możliwości zatrzymania, czy nawet korekty przebiegu tego procesu. W związku z koniecznością zachowania dużej precyzji nacięć paliwa stałego, jego produkcja jest stosunkowo droga.
-        Silniki na paliwo stałe posiadają szerokie spektrum zastosowań, począwszy od lekkich pocisków przeciwpancernych, aż po długie na 45,46 metrów (3,7 m średnicy) rakiety dodatkowe na paliwo stałe (ang. Solid Rocket Booster – SRB) amerykańskich promów kosmicznych.
-        Silnik rakietowy na paliwo stałe – rodzaj silnika rakietowego, w którym spalaniu w komorze wewnętrznego spalania ulega zhomogenizowana mieszanka paliwa i utleniacza. Komora wewnętrznego spalania ma formę tuby zawierającej blok mieszanki paliwowej. Silniki tego rodzaju są najstarszymi i najprostszymi rodzajami napędu, stosowanymi już w średniowiecznych Chinach. W komorze wewnętrznego spalania następuje zapłon zmagazynowanej w niej mieszaniny napędowej, zaś rozprężające się gorące gazy odprowadzane są do dysz w celu uzyskania pożądanego ciągu.
-        Krytyczną wartością tego rodzaju napędu jest powierzchnia płonącego gęstego paliwa, determinująca siłę produkowanego w ten sposób ciągu. W celu jej zwiększenia, w zgromadzonym paliwie wykonuje się nacięcia – rowki i szpary zwiększające powierzchnie paliwa podlegającego ekspozycji na działanie ognia. Wymaga to jednak dużej precyzji, gdyż zbyt wielka liczba nacięć – a co za tym idzie zbyt duża powierzchnia zapłonu – może doprowadzić do zbyt wielkiego ciśnienia wewnątrz komory spalania i eksplozji silnika.
-        Zalety
-        Podstawową zaletą silników na paliwo stałe jest duża stabilność oraz łatwość przechowywania przez długi czas. Paliwa stałe charakteryzują się dużą gęstością energii i szybkim czasem spalania, dość dobrze tolerują wstrząsy, wibracje i przyspieszenia. Nie wymagają też specjalnych pomp, co czyni pocisk mniej skomplikowanym.
-        Słabości
-        Podstawową słabością napędu na paliwo stałe jest niemożliwość jego zatrzymania i korekty ciągu. Po uruchomieniu zapłonu, całe zgromadzone w zbiorniku paliwo ulega wypaleniu bez możliwości zatrzymania, czy nawet korekty przebiegu tego procesu. W związku z koniecznością zachowania dużej precyzji nacięć paliwa stałego, jego produkcja jest stosunkowo droga.
-        Silniki na paliwo stałe posiadają szerokie spektrum zastosowań, począwszy od lekkich pocisków przeciwpancernych, aż po długie na 45,46 metrów (3,7 m średnicy) rakiety dodatkowe na paliwo stałe (ang. Solid Rocket Booster – SRB) amerykańskich promów kosmicznych.
-        Silnik rakietowy na paliwo stałe – rodzaj silnika rakietowego, w którym spalaniu w komorze wewnętrznego spalania ulega zhomogenizowana mieszanka paliwa i utleniacza. Komora wewnętrznego spalania ma formę tuby zawierającej blok mieszanki paliwowej. Silniki tego rodzaju są najstarszymi i najprostszymi rodzajami napędu, stosowanymi już w średniowiecznych Chinach. W komorze wewnętrznego spalania następuje zapłon zmagazynowanej w niej mieszaniny napędowej, zaś rozprężające się gorące gazy odprowadzane są do dysz w celu uzyskania pożądanego ciągu.
-        Krytyczną wartością tego rodzaju napędu jest powierzchnia płonącego gęstego paliwa, determinująca siłę produkowanego w ten sposób ciągu. W celu jej zwiększenia, w zgromadzonym paliwie wykonuje się nacięcia – rowki i szpary zwiększające powierzchnie paliwa podlegającego ekspozycji na działanie ognia. Wymaga to jednak dużej precyzji, gdyż zbyt wielka liczba nacięć – a co za tym idzie zbyt duża powierzchnia zapłonu – może doprowadzić do zbyt wielkiego ciśnienia wewnątrz komory spalania i eksplozji silnika.
-        Zalety
-        Podstawową zaletą silników na paliwo stałe jest duża stabilność oraz łatwość przechowywania przez długi czas. Paliwa stałe charakteryzują się dużą gęstością energii i szybkim czasem spalania, dość dobrze tolerują wstrząsy, wibracje i przyspieszenia. Nie wymagają też specjalnych pomp, co czyni pocisk mniej skomplikowanym.
-        Słabości
-        Podstawową słabością napędu na paliwo stałe jest niemożliwość jego zatrzymania i korekty ciągu. Po uruchomieniu zapłonu, całe zgromadzone w zbiorniku paliwo ulega wypaleniu bez możliwości zatrzymania, czy nawet korekty przebiegu tego procesu. W związku z koniecznością zachowania dużej precyzji nacięć paliwa stałego, jego produkcja jest stosunkowo droga.
-        Silniki na paliwo stałe posiadają szerokie spektrum zastosowań, począwszy od lekkich pocisków przeciwpancernych, aż po długie na 45,46 metrów (3,7 m średnicy) rakiety dodatkowe na paliwo stałe (ang. Solid Rocket Booster – SRB) amerykańskich promów kosmicznych.
-        Silnik rakietowy na paliwo stałe – rodzaj silnika rakietowego, w którym spalaniu w komorze wewnętrznego spalania ulega zhomogenizowana mieszanka paliwa i utleniacza. Komora wewnętrznego spalania ma formę tuby zawierającej blok mieszanki paliwowej. Silniki tego rodzaju są najstarszymi i najprostszymi rodzajami napędu, stosowanymi już w średniowiecznych Chinach. W komorze wewnętrznego spalania następuje zapłon zmagazynowanej w niej mieszaniny napędowej, zaś rozprężające się gorące gazy odprowadzane są do dysz w celu uzyskania pożądanego ciągu.
-        Krytyczną wartością tego rodzaju napędu jest powierzchnia płonącego gęstego paliwa, determinująca siłę produkowanego w ten sposób ciągu. W celu jej zwiększenia, w zgromadzonym paliwie wykonuje się nacięcia – rowki i szpary zwiększające powierzchnie paliwa podlegającego ekspozycji na działanie ognia. Wymaga to jednak dużej precyzji, gdyż zbyt wielka liczba nacięć – a co za tym idzie zbyt duża powierzchnia zapłonu – może doprowadzić do zbyt wielkiego ciśnienia wewnątrz komory spalania i eksplozji silnika.
-        Zalety
-        Podstawową zaletą silników na paliwo stałe jest duża stabilność oraz łatwość przechowywania przez długi czas. Paliwa stałe charakteryzują się dużą gęstością energii i szybkim czasem spalania, dość dobrze tolerują wstrząsy, wibracje i przyspieszenia. Nie wymagają też specjalnych pomp, co czyni pocisk mniej skomplikowanym.
-        Słabości
-        Podstawową słabością napędu na paliwo stałe jest niemożliwość jego zatrzymania i korekty ciągu. Po uruchomieniu zapłonu, całe zgromadzone w zbiorniku paliwo ulega wypaleniu bez możliwości zatrzymania, czy nawet korekty przebiegu tego procesu. W związku z koniecznością zachowania dużej precyzji nacięć paliwa stałego, jego produkcja jest stosunkowo droga.
-        Silniki na paliwo stałe posiadają szerokie spektrum zastosowań, począwszy od lekkich pocisków przeciwpancernych, aż po długie na 45,46 metrów (3,7 m średnicy) rakiety dodatkowe na paliwo stałe (ang. Solid Rocket Booster – SRB) amerykańskich promów kosmicznych.
 
+    <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+    150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>Założenia
+    i cele festiwalu:</span></b></p>
 
-    </p>
+    <ul style='margin-top:0cm' type=disc>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>prezentacja
+     i konfrontacja osiągnięć artystycznych wrocławskich zespołów amatorskich,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>pobudzanie
+     aktywności chórów amatorskich i dostarczanie im inspiracji do podnoszenia
+     poziomu artystycznego,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>rozbudzanie
+     zamiłowania do śpiewu chóralnego i jego propagowanie jako najbardziej
+     naturalnej formy aktywności muzycznej,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>prezentacja
+     i promowanie literatury chóralnej,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>nawiązanie
+     współpracy między wrocławskimi chórami osiedlowymi,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>nawiązanie
+     współpracy międzypokoleniowej w zespołach,</span></li>
+        <li class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     150%'><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>dobra
+     zabawa w miłej rodzinnej atmosferze.</span></li>
+    </ul>
+
+    <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:"Times New Roman",serif'>Postanowienia
+ogólne</span></b></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Organizatorzy zastrzegają sobie możliwość
+nieodpłatnego dysponowania materiałem z prezentacji festiwalowych na dostępnych
+nośnikach audiowizualnych.</span></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Organizatorzy przewidują część
+nieoficjalną po zakończeniu występu chórów oraz poczęstunek dla wszystkich
+zespołów.</span></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Chór musi zgłosić gotowość do wejścia na
+scenę najpóźniej na 45 minut przed planowanym występem (zdarza się, że z
+powodów losowych któryś zespół może nie dotrzeć i powstaje luka).</span></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Wszystkie kwestie nie ujęte w regulaminie rozstrzyga Organizator.</span></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Organizator zastrzega sobie prawo do zmian
+w regulaminie.</span></p>
+
+    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:-18.0pt;
+line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><span style='font-size:12.0pt;line-height:150%;font-family:
+"Times New Roman",serif;color:black'>Nadesłanie zgłoszenia jest równoznaczne z
+przyjęciem warunków niniejszego Regulaminu.</span></p>
+
+    <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><b><span style='font-size:12.0pt;line-height:150%;
+font-family:"Times New Roman",serif'>Życzymy Wszystkim uczestnikom  owocnych
+przygotowań do Festiwalu i niezapomnianych wrażeń muzycznych!</span></b></p>
 
 </div>
 </div>
