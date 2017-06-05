@@ -1,3 +1,30 @@
+body{
+    background-image: url("res/background2.jpg");
+    min-height: 100%;
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+
+html {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+
+
+.footer {position: relative;
+    margin-top: -180px; /* wysokość stopki z minusem :) */
+    height: 180px;
+    clear:both;}
+
+nav{
+    background-color: #FFFFFF;
+}
+
 nav input[type=text] {
     padding:5px;
     border:2px solid #ccc;
@@ -67,6 +94,9 @@ nav ol a {
     text-decoration: none;
 
 }
+
+
+
 nav h2:nth-of-type(1){
 
      position: absolute;
